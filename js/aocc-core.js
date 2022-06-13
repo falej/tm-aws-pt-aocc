@@ -48,7 +48,7 @@ class AOCC_MainApp extends AOCC_App {
     }
     /* AOCC */
     _handleAoccLog(data, channel) {
-        console.log(`[${data.sender}] ${data.message}`);
+        console.debug(`[${data.sender}] ${data.message}`);
     }
     _handleAoccLaunch(data, channel) {
         let command = new AOCC_LaunchCommand(this);
